@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — Offline AI Academy</title>
+<meta name="description" content="Help for Offline AI Academy: how the three modes work, what to do if the tutor is slow, attaching PDFs, connecting a cloud model, and how to reach a person.">
+<style>
+  :root{
+    --bg:#FFFFFF; --surface:#F5F8FD; --stroke:#E2E8F2;
+    --text:#0F1319; --text2:#55606D; --text3:#8A95A1;
+    --accent:#0A57BF; --accent2:#1877F2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#080B10; --surface:#141A22; --stroke:#232C36;
+      --text:#E9EEF4; --text2:#AAB4C0; --text3:#76828F;
+      --accent:#7DB2FF; --accent2:#A9CBFF;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:56px 20px 96px}
+  .mark{font-weight:800;font-size:15px;letter-spacing:-.2px}
+  .mark span{background:linear-gradient(135deg,var(--accent2),var(--accent));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font-size:34px;line-height:1.15;letter-spacing:-.8px;margin:26px 0 10px}
+  h2{font-size:19px;letter-spacing:-.3px;margin:38px 0 10px}
+  h3{font-size:16px;margin:24px 0 6px;color:var(--text)}
+  p,li{color:var(--text2)}
+  .lede{font-size:18px;color:var(--text)}
+  .card{background:var(--surface);border:1px solid var(--stroke);border-radius:16px;
+    padding:18px 20px;margin:22px 0}
+  .card strong{color:var(--text)}
+  .cta{display:inline-block;margin-top:6px;padding:12px 20px;border-radius:999px;
+    background:linear-gradient(135deg,var(--accent2),var(--accent));
+    color:#fff;text-decoration:none;font-weight:700;font-size:15px}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  .foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--stroke);
+    color:var(--text3);font-size:13.5px}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark">Offline <span>AI Academy</span></div>
+
+  <h1>Support</h1>
+  <p class="lede">A private tutor that runs on your iPhone. No account, no
+  subscription, and no internet needed.</p>
+
+  <div class="card">
+    <strong>Need a person?</strong>
+    <p>Email and you will get a reply. Include your iPhone model, your iOS version
+    and what you were doing when it went wrong — that is usually enough to solve it
+    in one round trip.</p>
+    <a class="cta" href="mailto:sivavimelrajhen@gmail.com?subject=Offline%20AI%20Academy%20support">Email support</a>
+    <p style="margin-bottom:0;margin-top:14px;font-size:14px">
+      <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a>
+    </p>
+  </div>
+
+  <h2>Getting started</h2>
+  <p>Open the app and pick a mode from the bar at the bottom. Fill in the short
+  brief, tap the button, and the tutor starts. Everything runs on the device, so the
+  first reply takes a few seconds while the model loads.</p>
+
+  <h3>Study</h3>
+  <p>Tell it the subject and why you are studying it. Optionally attach a PDF or
+  DOCX of your notes and it will teach from them. Then ask anything — it explains
+  rather than quizzes you.</p>
+
+  <h3>Interview</h3>
+  <p>Enter the role, your years of experience, and attach your résumé as a PDF or
+  DOCX. The résumé is required for this mode, because the questions are drawn from
+  it. The interviewer asks one question at a time and waits for your answer.</p>
+
+  <h3>Exam Prep</h3>
+  <p>Enter the subject, choose multiple choice or written answers, and optionally
+  attach reference material. You get one question at a time; each answer is marked
+  and the correct answer explained before the next question.</p>
+
+  <h2>Common questions</h2>
+
+  <h3>Why is the app so large?</h3>
+  <p>The AI model is inside the app — roughly 770 MB of the download. That is what
+  lets it work with no account and no internet. Because of the size, iOS will ask
+  you to install over Wi-Fi.</p>
+
+  <h3>The first answer is slow.</h3>
+  <p>The model is loaded into memory the first time you start a session after
+  launching the app. After that, replies are much faster. Older iPhones are slower
+  than new ones; this is normal and not a fault.</p>
+
+  <h3>Does it work in aeroplane mode?</h3>
+  <p>Yes. That is the intended way to use it. The app makes no network requests
+  unless you connect a cloud model yourself.</p>
+
+  <h3>My PDF or DOCX would not attach.</h3>
+  <ul>
+    <li>Legacy <code>.doc</code>, <code>.xls</code> and <code>.ppt</code> are not
+      supported. Save as <code>.docx</code> and try again.</li>
+    <li>A scanned PDF that is only images may have no text to read.</li>
+    <li>Very large files are trimmed — the app uses the first few thousand
+      characters as reference, which is enough for a tutor to work from.</li>
+    <li>Password-protected files cannot be opened.</li>
+  </ul>
+
+  <h3>Can I use a bigger or different model?</h3>
+  <p>Yes. <em>Settings → AI Engine → Import a GGUF model</em> lets you pick any
+  compatible <code>.gguf</code> file from Files. Put it in
+  <em>Files → On My iPhone → Offline AI Academy</em> first if you want it handy.
+  Larger models are slower and need more memory; if a model will not load, it is
+  usually too large for the device.</p>
+
+  <h3>Can I use ChatGPT, Claude or Gemini instead?</h3>
+  <p>Yes, with your own API key: <em>Settings → AI Engine → Connect a cloud API</em>.
+  Gemini, ChatGPT, Claude, Groq, Mistral, DeepSeek and Qwen are built in, and there
+  is a custom option for Ollama, LM Studio, OpenRouter or any OpenAI-compatible
+  endpoint. While a cloud engine is active your session text is sent to that
+  provider — see the <a href="privacy.html">privacy policy</a>. Switch back to the
+  bundled model any time to go fully offline again.</p>
+
+  <h3>The app closed when I changed the engine.</h3>
+  <p>On iPhones with 4 GB of memory or less, the app restarts itself when you switch
+  between models, because the old model has to be released first. Reopen it and the
+  engine you chose will be active. This is a known limitation and is on the list to
+  improve.</p>
+
+  <h3>Where did my conversation go?</h3>
+  <p>Sessions are deliberately not saved. When you leave a conversation it is gone,
+  which is part of keeping the app private. Use <strong>Copy</strong> or
+  <strong>Share</strong> under any reply to keep something before you leave.</p>
+
+  <h3>The tutor said something wrong.</h3>
+  <p>It can. A 1-billion-parameter model that fits on a phone is useful for
+  explaining, drilling and rehearsing, but it is not a reference work and it will
+  sometimes be confidently incorrect. Check anything that matters against your
+  course material. Attaching your own notes makes it noticeably more accurate.</p>
+
+  <h3>Changing the look</h3>
+  <p><em>Settings → Appearance</em> has a light/dark switch and six accent colours.
+  The whole app follows your choice immediately.</p>
+
+  <h3>How do I delete everything?</h3>
+  <p>Delete the app. Nothing is stored anywhere else, and there is no account to
+  close. To remove just an imported model or an API key, use
+  <em>Settings → AI Engine</em>.</p>
+
+  <h2>Requirements</h2>
+  <ul>
+    <li>iPhone or iPad running iOS 16.4 or later.</li>
+    <li>About 800 MB of free space.</li>
+    <li>No internet connection required.</li>
+  </ul>
+
+  <h2>Reporting a problem</h2>
+  <p>Email <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a>
+  with:</p>
+  <ul>
+    <li>iPhone model and iOS version</li>
+    <li>Which mode you were in — Study, Interview or Exam Prep</li>
+    <li>Whether you were on the bundled model or a cloud one</li>
+    <li>What happened, and what you expected instead</li>
+  </ul>
+
+  <div class="foot">
+    Offline AI Academy · <a href="privacy.html">Privacy policy</a> ·
+    <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a><br>
+    Built with Llama. Llama 3.2 is licensed under the Llama 3.2 Community License,
+    Copyright © Meta Platforms, Inc. All Rights Reserved.
+  </div>
+</div>
+</body>
+</html>
